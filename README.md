@@ -21,8 +21,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Getting Started
 
 ### 1.	Installation process
-Install and run a dev server.  Navigate to http://localhost:4200.  
-The app will reload if any changes to the source files.
+Install and run a dev server.  Navigate to http://localhost:4200.  The app will reload if any changes to the source files.
 
 Run 'npm install'
 Run 'npm start'

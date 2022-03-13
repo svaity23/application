@@ -1,0 +1,1 @@
+export const RESULTS_STORE_KEY = 'results-store';

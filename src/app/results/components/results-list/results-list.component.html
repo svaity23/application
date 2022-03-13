@@ -1,0 +1,74 @@
+<div class="canvas">
+  <div class="content-header">
+    <h4>Select the sport type </h4>
+    <select class="form-control select-options" (change)="selectSport($event)">
+      <option *ngFor="let option of this.options" [value]="option">
+        {{ option }}
+      </option>
+    </select>
+  </div>
+
+  <div class="tennis-results results-spacing"
+    *ngIf="(this.selectedSport === sportTypeKeyEnum.all ||  this.selectedSport === sportTypeKeyEnum.tennis) && this.tennisResults?.length > 0">
+    <span class="content-header-row_name">Tennis</span>
+    <div class="content-header-row">
+      <div class="content_header_name">Looser</div>
+      <div class="content_header_name">Number Of Sets</div>
+      <div class="content_header_name">Publication Date</div>
+      <div class="content_header_name">Tournament</div>
+      <div class="content_header_name">Winner</div>
+    </div>
+
+    <div *ngFor="let result of tennisResults">
+      <div class="content_list_row">
+        <div class="content_list_data">{{ result?.looser }}</div>
+        <div class="content_list_data">{{ result?.numberOfSets }}</div>
+        <div class="content_list_data">{{ result?.publicationDate }}</div>
+        <div class="content_list_data">{{ result?.tournament }}</div>
+        <div class="content_list_data">{{ result?.winner }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nba-Results results-spacing"
+    *ngIf="(this.selectedSport === sportTypeKeyEnum.all || this.selectedSport === sportTypeKeyEnum.nba) && this.nbaResults?.length > 0">
+    <span class="content-header-row_name">NBA</span>
+    <div class="content-header-row">
+      <div class="content_header_name">MVP</div>
+      <div class="content_header_name">Game Number</div>
+      <div class="content_header_name">Looser</div>
+      <div class="content_header_name">Publication Date</div>
+      <div class="content_header_name">Tournament</div>
+      <div class="content_header_name">Winner</div>
+    </div>
+    <div *ngFor="let result of nbaResults">
+      <div class="content_list_row">
+        <div class="content_list_data">{{ result?.mvp }}</div>
+        <div class="content_list_data">{{ result?.gameNumber }}</div>
+        <div class="content_list_data">{{ result?.looser }}</div>
+        <div class="content_list_data">{{ result?.publicationDate }}</div>
+        <div class="content_list_data">{{ result?.tournament }}</div>
+        <div class="content_list_data">{{ result?.winner }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="f1-Results results-spacing"
+    *ngIf="(this.selectedSport === sportTypeKeyEnum.all || this.selectedSport === sportTypeKeyEnum.f1) && this.f1Results?.length > 0">
+    <span class="content-header-row_name">F1</span>
+    <div class="content-header-row">
+      <div class="content_header_name">Publication Date</div>
+      <div class="content_header_name">Seconds</div>
+      <div class="content_header_name">Tournament</div>
+      <div class="content_header_name">Winner</div>
+    </div>
+    <div *ngFor="let result of f1Results">
+      <div class="content_list_row">
+        <div class="content_list_data">{{ result?.publicationDate }}</div>
+        <div class="content_list_data">{{ result?.seconds }}</div>
+        <div class="content_list_data">{{ result?.tournament }}</div>
+        <div class="content_list_data">{{ result?.winner }}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+.canvas {
+  padding: 100px 50px 50px 50px;
+  overflow: initial;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.content-header-row_name {
+  font: 500 23px/32px "Lato", sans-serif;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.content-header-row {
+  background-color: #f7f9fa;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  font: 500 16px/20px "Lato", sans-serif;
+  height: 40px;
+}
+
+.select-options {
+  width: 100px;
+  font: 400 14px/20px "Lato", sans-serif;
+  border-radius: 7px;
+  padding: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.content__row {
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid transparent;  
+  display: flex;
+  font: 400 14px/20px "Lato", sans-serif;
+  height: 40px;
+}
+
+.content_list_row {
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid transparent;  
+  display: flex;
+  font: 400 14px/20px "Lato", sans-serif;
+  height: 48px;
+}
+
+.content_list_data {
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.content_header_name {
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.results-spacing {
+  padding-bottom: 30px;
+}

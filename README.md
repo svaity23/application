@@ -1,18 +1,3 @@
-# Application Purpose
-To create a single page angular application and use the following API to retrieve sports results and
-sort into a table of results that are displayed. Each sport result contains several data and always
-includes the publication time.
-
-Method: POST
-Content-Type: application/json
-Url: https://ancient-wood-1161.getsandbox.com:443/results
-
-Tasks:
-- Display the sports results in reverse chronological order on the page.
-- Add a filter to the page to display only certain types or events (e.g. f1Results)
-- How can you confirm the code works?
-- Bonus: Implement the rest call asynchronously
-
 # Introduction
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.

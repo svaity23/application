@@ -1,5 +1,4 @@
-# Application
-# Purpose
+# Application Purpose
 To create a single page angular application and use the following API to retrieve sports results and
 sort into a table of results that are displayed. Each sport result contains several data and always
 includes the publication time.

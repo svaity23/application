@@ -20,7 +20,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Getting Started
 
-### 1.	Installation process
+### Installation process
 Install and run a dev server.  Navigate to http://localhost:4200.  The app will reload if any changes to the source files.
 
 Run 'npm install'
@@ -56,16 +56,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 
 ## Structure of the project
-core:
-    - constants
+- core:
+  - constants
     - enums
     - mock
     - models
     - services
-results: UI components
+- results: UI components
     - Container   - results      - aware of exisitence of the state. Subscribes to select() and dispatch actions to update state
     - Components  - results-list - presentation component
-store: results-store
+- store: results-store
     - actions:    contains all Store actions.
     - effects:    contains all the Store effects.
     - reducers:   contains the Feature module state together with the reducers.
@@ -73,12 +73,13 @@ store: results-store
     **index.ts file is a barrel file to export everything from the respective folders (to make referencing the Store easier in the application via short paths).
 
 ## NGRX state management in this application
+  ```
 
-                                    +-----------------------+                 +----------+
+                                     +-----------------------+                 +----------+
  +---------------+                  |                       |                 |          |
  |  SELECTOR     |<-----------------|       STORE           |                 |  SERVER  |
  +---------------+                  |                       |                 |          |
-        |                           +-----------------------+                 +----------+
+        |                            +-----------------------+                 +----------+
         |                                     ^                                 ^     |
         |                                     |                                 |     |
         |                                     |                                 |     v

@@ -57,19 +57,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Structure of the project
 - core:
   - constants
-    - enums
-    - mock
-    - models
-    - services
+  - enums
+  - mock
+  - models
+  - services
 - results: UI components
-    - Container   - results      - aware of exisitence of the state. Subscribes to select() and dispatch actions to update state
-    - Components  - results-list - presentation component
+  - Container   - results      - aware of exisitence of the state. Subscribes to select() and dispatch actions to update state
+  - Components  - results-list - presentation component
 - store: results-store
-    - actions:    contains all Store actions.
-    - effects:    contains all the Store effects.
-    - reducers:   contains the Feature module state together with the reducers.
-    - selectors:  folder contains all the selectors.
-    **index.ts file is a barrel file to export everything from the respective folders (to make referencing the Store easier in the application via short paths).
+  - actions:    contains all Store actions.
+  - effects:    contains all the Store effects.
+  - reducers:   contains the Feature module state together with the reducers.
+  - selectors:  folder contains all the selectors.
+  - **index.ts file is a barrel file to export everything from the respective folders (to make referencing the Store easier in the application via short paths).
 
 ## NGRX state management in this application
   ```
